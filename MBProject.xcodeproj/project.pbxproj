@@ -8,24 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		07CF0725207EE6E90062BDCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0724207EE6E90062BDCF /* AppDelegate.m */; };
-		07CF0728207EE6E90062BDCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0727207EE6E90062BDCF /* ViewController.m */; };
-		07CF072B207EE6E90062BDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CF0729207EE6E90062BDCF /* Main.storyboard */; };
-		07CF072D207EE6EA0062BDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CF072C207EE6EA0062BDCF /* Assets.xcassets */; };
-		07CF0730207EE6EA0062BDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CF072E207EE6EA0062BDCF /* LaunchScreen.storyboard */; };
-		07CF0733207EE6EA0062BDCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0732207EE6EA0062BDCF /* main.m */; };
+		07CF0743207EF24B0062BDCF /* ApiNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0742207EF24B0062BDCF /* ApiNetWork.m */; };
+		07CF0746207EF4390062BDCF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0745207EF4390062BDCF /* BaseViewController.m */; };
+		07CF0749207EF4570062BDCF /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0748207EF4570062BDCF /* BaseNavigationController.m */; };
+		07CF0758207EFA420062BDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CF0750207EFA420062BDCF /* Assets.xcassets */; };
+		07CF0759207EFA420062BDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CF0751207EFA420062BDCF /* LaunchScreen.storyboard */; };
+		07CF075A207EFA420062BDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CF0753207EFA420062BDCF /* Main.storyboard */; };
+		07CF075B207EFA420062BDCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0755207EFA420062BDCF /* main.m */; };
+		07CF075C207EFA420062BDCF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07CF0757207EFA420062BDCF /* Info.plist */; };
+		FB34310667D41B259E259A46 /* libPods-MBProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F136D22C3272B6173E5C0F3 /* libPods-MBProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07CF0720207EE6E90062BDCF /* MBProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CF0723207EE6E90062BDCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		07CF0724207EE6E90062BDCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		07CF0726207EE6E90062BDCF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		07CF0727207EE6E90062BDCF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		07CF072A207EE6E90062BDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07CF072C207EE6EA0062BDCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		07CF072F207EE6EA0062BDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		07CF0731207EE6EA0062BDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07CF0732207EE6EA0062BDCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07CF0741207EF24B0062BDCF /* ApiNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiNetWork.h; sourceTree = "<group>"; };
+		07CF0742207EF24B0062BDCF /* ApiNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiNetWork.m; sourceTree = "<group>"; };
+		07CF0744207EF4390062BDCF /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		07CF0745207EF4390062BDCF /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		07CF0747207EF4570062BDCF /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		07CF0748207EF4570062BDCF /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		07CF074A207EF4A80062BDCF /* ApiDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiDefine.h; sourceTree = "<group>"; };
+		07CF074B207EF4FD0062BDCF /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		07CF0750207EFA420062BDCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07CF0752207EFA420062BDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07CF0754207EFA420062BDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07CF0755207EFA420062BDCF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07CF0756207EFA420062BDCF /* MBProject_Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProject_Header.pch; sourceTree = "<group>"; };
+		07CF0757207EFA420062BDCF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC0B092117CDE501F35E091 /* Pods-MBProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBProject/Pods-MBProject.debug.xcconfig"; sourceTree = "<group>"; };
+		7F136D22C3272B6173E5C0F3 /* libPods-MBProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MBProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EDF4B9DB56023AD89E444E /* Pods-MBProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBProject/Pods-MBProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB34310667D41B259E259A46 /* libPods-MBProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,8 @@
 			children = (
 				07CF0722207EE6E90062BDCF /* MBProject */,
 				07CF0721207EE6E90062BDCF /* Products */,
+				710B344A32CD977A436FA2F3 /* Pods */,
+				D4D98FF5552ED6800CA3FF4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +75,105 @@
 		07CF0722207EE6E90062BDCF /* MBProject */ = {
 			isa = PBXGroup;
 			children = (
+				07CF074F207EFA420062BDCF /* Source */,
+				07CF073D207EF22E0062BDCF /* Base */,
+				07CF073C207EECB40062BDCF /* Module */,
+				07CF073A207EEC2F0062BDCF /* Utils */,
 				07CF0723207EE6E90062BDCF /* AppDelegate.h */,
 				07CF0724207EE6E90062BDCF /* AppDelegate.m */,
-				07CF0726207EE6E90062BDCF /* ViewController.h */,
-				07CF0727207EE6E90062BDCF /* ViewController.m */,
-				07CF0729207EE6E90062BDCF /* Main.storyboard */,
-				07CF072C207EE6EA0062BDCF /* Assets.xcassets */,
-				07CF072E207EE6EA0062BDCF /* LaunchScreen.storyboard */,
-				07CF0731207EE6EA0062BDCF /* Info.plist */,
-				07CF0732207EE6EA0062BDCF /* main.m */,
 			);
 			path = MBProject;
+			sourceTree = "<group>";
+		};
+		07CF073A207EEC2F0062BDCF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				07CF073B207EEC2F0062BDCF /* Category */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		07CF073B207EEC2F0062BDCF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		07CF073C207EECB40062BDCF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		07CF073D207EF22E0062BDCF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				07CF073E207EF22E0062BDCF /* BaseNetWork */,
+				07CF073F207EF22E0062BDCF /* BaseViewController */,
+				07CF0740207EF22E0062BDCF /* BaseDefine */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		07CF073E207EF22E0062BDCF /* BaseNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				07CF0741207EF24B0062BDCF /* ApiNetWork.h */,
+				07CF0742207EF24B0062BDCF /* ApiNetWork.m */,
+			);
+			path = BaseNetWork;
+			sourceTree = "<group>";
+		};
+		07CF073F207EF22E0062BDCF /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				07CF0744207EF4390062BDCF /* BaseViewController.h */,
+				07CF0745207EF4390062BDCF /* BaseViewController.m */,
+				07CF0747207EF4570062BDCF /* BaseNavigationController.h */,
+				07CF0748207EF4570062BDCF /* BaseNavigationController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		07CF0740207EF22E0062BDCF /* BaseDefine */ = {
+			isa = PBXGroup;
+			children = (
+				07CF074A207EF4A80062BDCF /* ApiDefine.h */,
+				07CF074B207EF4FD0062BDCF /* CommonDefine.h */,
+			);
+			path = BaseDefine;
+			sourceTree = "<group>";
+		};
+		07CF074F207EFA420062BDCF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				07CF0750207EFA420062BDCF /* Assets.xcassets */,
+				07CF0751207EFA420062BDCF /* LaunchScreen.storyboard */,
+				07CF0753207EFA420062BDCF /* Main.storyboard */,
+				07CF0755207EFA420062BDCF /* main.m */,
+				07CF0756207EFA420062BDCF /* MBProject_Header.pch */,
+				07CF0757207EFA420062BDCF /* Info.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		710B344A32CD977A436FA2F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0B092117CDE501F35E091 /* Pods-MBProject.debug.xcconfig */,
+				D9EDF4B9DB56023AD89E444E /* Pods-MBProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D4D98FF5552ED6800CA3FF4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F136D22C3272B6173E5C0F3 /* libPods-MBProject.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07CF0736207EE6EA0062BDCF /* Build configuration list for PBXNativeTarget "MBProject" */;
 			buildPhases = (
+				EED81B90D5E8757C7CF5092C /* [CP] Check Pods Manifest.lock */,
 				07CF071C207EE6E90062BDCF /* Sources */,
 				07CF071D207EE6E90062BDCF /* Frameworks */,
 				07CF071E207EE6E90062BDCF /* Resources */,
+				6DDDFFB1C7FE5FAC6051C1D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,42 +235,84 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07CF0730207EE6EA0062BDCF /* LaunchScreen.storyboard in Resources */,
-				07CF072D207EE6EA0062BDCF /* Assets.xcassets in Resources */,
-				07CF072B207EE6E90062BDCF /* Main.storyboard in Resources */,
+				07CF075C207EFA420062BDCF /* Info.plist in Resources */,
+				07CF075A207EFA420062BDCF /* Main.storyboard in Resources */,
+				07CF0758207EFA420062BDCF /* Assets.xcassets in Resources */,
+				07CF0759207EFA420062BDCF /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DDDFFB1C7FE5FAC6051C1D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MBProject/Pods-MBProject-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBProject/Pods-MBProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EED81B90D5E8757C7CF5092C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MBProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07CF071C207EE6E90062BDCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07CF0728207EE6E90062BDCF /* ViewController.m in Sources */,
-				07CF0733207EE6EA0062BDCF /* main.m in Sources */,
+				07CF075B207EFA420062BDCF /* main.m in Sources */,
+				07CF0746207EF4390062BDCF /* BaseViewController.m in Sources */,
 				07CF0725207EE6E90062BDCF /* AppDelegate.m in Sources */,
+				07CF0743207EF24B0062BDCF /* ApiNetWork.m in Sources */,
+				07CF0749207EF4570062BDCF /* BaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		07CF0729207EE6E90062BDCF /* Main.storyboard */ = {
+		07CF0751207EFA420062BDCF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				07CF072A207EE6E90062BDCF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		07CF072E207EE6EA0062BDCF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07CF072F207EE6EA0062BDCF /* Base */,
+				07CF0752207EFA420062BDCF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		07CF0753207EFA420062BDCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07CF0754207EFA420062BDCF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,11 +430,12 @@
 		};
 		07CF0737207EE6EA0062BDCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC0B092117CDE501F35E091 /* Pods-MBProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = MBProject/Info.plist;
+				INFOPLIST_FILE = MBProject/Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +449,12 @@
 		};
 		07CF0738207EE6EA0062BDCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EDF4B9DB56023AD89E444E /* Pods-MBProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = MBProject/Info.plist;
+				INFOPLIST_FILE = MBProject/Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

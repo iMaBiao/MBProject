@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseNavigationController.h
 //  MBProject
 //
 //  Created by MaBiao on 2018/4/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BaseNavigationController : UINavigationController
 
 @end
-
