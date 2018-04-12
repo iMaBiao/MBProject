@@ -16,6 +16,11 @@
 		07CF075A207EFA420062BDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CF0753207EFA420062BDCF /* Main.storyboard */; };
 		07CF075B207EFA420062BDCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0755207EFA420062BDCF /* main.m */; };
 		07CF075C207EFA420062BDCF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07CF0757207EFA420062BDCF /* Info.plist */; };
+		07D8D7D5207F572C0060C8E5 /* UIImage+drawRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D8D7D4207F572C0060C8E5 /* UIImage+drawRect.m */; };
+		07D8D7D9207F57710060C8E5 /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D8D7D8207F57710060C8E5 /* UIColor+Extend.m */; };
+		07D8D7DD207F58AE0060C8E5 /* NSDate+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D8D7DC207F58AE0060C8E5 /* NSDate+Extend.m */; };
+		07D8D7E1207F5B2D0060C8E5 /* NSString+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D8D7E0207F5B2D0060C8E5 /* NSString+Check.m */; };
+		07D8D7E5207F5C9F0060C8E5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D8D7E4207F5C9F0060C8E5 /* UIView+Frame.m */; };
 		FB34310667D41B259E259A46 /* libPods-MBProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F136D22C3272B6173E5C0F3 /* libPods-MBProject.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +42,16 @@
 		07CF0755207EFA420062BDCF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07CF0756207EFA420062BDCF /* MBProject_Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProject_Header.pch; sourceTree = "<group>"; };
 		07CF0757207EFA420062BDCF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D8D7D3207F572C0060C8E5 /* UIImage+drawRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+drawRect.h"; sourceTree = "<group>"; };
+		07D8D7D4207F572C0060C8E5 /* UIImage+drawRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+drawRect.m"; sourceTree = "<group>"; };
+		07D8D7D7207F57710060C8E5 /* UIColor+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
+		07D8D7D8207F57710060C8E5 /* UIColor+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
+		07D8D7DB207F58AE0060C8E5 /* NSDate+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extend.h"; sourceTree = "<group>"; };
+		07D8D7DC207F58AE0060C8E5 /* NSDate+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extend.m"; sourceTree = "<group>"; };
+		07D8D7DF207F5B2D0060C8E5 /* NSString+Check.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Check.h"; sourceTree = "<group>"; };
+		07D8D7E0207F5B2D0060C8E5 /* NSString+Check.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Check.m"; sourceTree = "<group>"; };
+		07D8D7E3207F5C9F0060C8E5 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		07D8D7E4207F5C9F0060C8E5 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		6BC0B092117CDE501F35E091 /* Pods-MBProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBProject/Pods-MBProject.debug.xcconfig"; sourceTree = "<group>"; };
 		7F136D22C3272B6173E5C0F3 /* libPods-MBProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MBProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EDF4B9DB56023AD89E444E /* Pods-MBProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBProject/Pods-MBProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +111,11 @@
 		07CF073B207EEC2F0062BDCF /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				07D8D7E2207F5C920060C8E5 /* UIView */,
+				07D8D7DE207F5B070060C8E5 /* NSString */,
+				07D8D7DA207F589F0060C8E5 /* NSDate */,
+				07D8D7D6207F57390060C8E5 /* UIColor */,
+				07D8D7D2207F572C0060C8E5 /* UIImage */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -157,6 +177,51 @@
 				07CF0757207EFA420062BDCF /* Info.plist */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		07D8D7D2207F572C0060C8E5 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				07D8D7D3207F572C0060C8E5 /* UIImage+drawRect.h */,
+				07D8D7D4207F572C0060C8E5 /* UIImage+drawRect.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		07D8D7D6207F57390060C8E5 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				07D8D7D7207F57710060C8E5 /* UIColor+Extend.h */,
+				07D8D7D8207F57710060C8E5 /* UIColor+Extend.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		07D8D7DA207F589F0060C8E5 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				07D8D7DB207F58AE0060C8E5 /* NSDate+Extend.h */,
+				07D8D7DC207F58AE0060C8E5 /* NSDate+Extend.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		07D8D7DE207F5B070060C8E5 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				07D8D7DF207F5B2D0060C8E5 /* NSString+Check.h */,
+				07D8D7E0207F5B2D0060C8E5 /* NSString+Check.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		07D8D7E2207F5C920060C8E5 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				07D8D7E3207F5C9F0060C8E5 /* UIView+Frame.h */,
+				07D8D7E4207F5C9F0060C8E5 /* UIView+Frame.m */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		710B344A32CD977A436FA2F3 /* Pods */ = {
@@ -289,9 +354,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				07CF075B207EFA420062BDCF /* main.m in Sources */,
+				07D8D7D5207F572C0060C8E5 /* UIImage+drawRect.m in Sources */,
 				07CF0746207EF4390062BDCF /* BaseViewController.m in Sources */,
 				07CF0725207EE6E90062BDCF /* AppDelegate.m in Sources */,
+				07D8D7DD207F58AE0060C8E5 /* NSDate+Extend.m in Sources */,
+				07D8D7D9207F57710060C8E5 /* UIColor+Extend.m in Sources */,
+				07D8D7E1207F5B2D0060C8E5 /* NSString+Check.m in Sources */,
 				07CF0743207EF24B0062BDCF /* ApiNetWork.m in Sources */,
+				07D8D7E5207F5C9F0060C8E5 /* UIView+Frame.m in Sources */,
 				07CF0749207EF4570062BDCF /* BaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
