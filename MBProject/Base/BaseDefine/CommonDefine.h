@@ -12,11 +12,11 @@
 //常用的宏定义
 
 //-------系统宽，高-------------------------------------------------
-#define ScreenWidth        [UIScreen mainScreen].bounds.size.width      // 界面宽度
-#define ScreenHeight       [UIScreen mainScreen].bounds.size.height     // 界面高度
+#define ScreenWidth   [UIScreen mainScreen].bounds.size.width      // 界面宽度
+#define ScreenHeight  [UIScreen mainScreen].bounds.size.height     // 界面高度
 
-#define StatusBarHeight (DeviceHeight == 812.0 ? 44 : 20)
-#define NavBarHeight    44
+#define StatusBarHeight (DeviceHeight == 812.0 ? 44 : 20)           //状态栏高度
+#define NavBarHeight    44                                          //导航栏高度
 #define SafeAreaTopHeight (DeviceHeight == 812.0 ? 88 : 64)
 #define BottomTarBarSpace (DeviceHeight == 812.0 ? 34 : 0)
 #define TabBarHeight       49

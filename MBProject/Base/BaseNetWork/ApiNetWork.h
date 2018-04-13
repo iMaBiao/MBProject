@@ -24,10 +24,7 @@
                  URL:(NSString *)url
              success:(void (^)(id result))success
              failure:(void (^)(NSError *error))failure;
-//Http json Post 方法
-- (void)httpJsonPostFunc:(NSDictionary *)parameters
-                     URL:(NSString *)url success:(void (^)(id))success
-                 failure:(void (^)(NSError *))failure;
+
 //manager ,唯一
 @property(strong,nonatomic) AFHTTPSessionManager *manager;
 @end

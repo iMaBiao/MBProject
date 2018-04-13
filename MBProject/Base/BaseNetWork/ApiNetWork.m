@@ -78,21 +78,5 @@
     }];
 }
 
--(void)httpJsonPostFunc:(NSDictionary *)parameters URL:(NSString *)url success:(void (^)(id))success failure:(void (^)(NSError *))failure{
-    
-    _manager.requestSerializer = [AFJSONRequestSerializer serializer];
-
-    [_manager POST:url parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if(success)
-        {
-            success(responseObject);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (failure) {
-            failure(error);
-        }
-    }];
-}
 
 @end
