@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07C4E660208B2E0F005FA983 /* ApiNetWork+AppInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E65F208B2E0F005FA983 /* ApiNetWork+AppInit.m */; };
+		07C4E663208B3196005FA983 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E662208B3196005FA983 /* GuideViewController.m */; };
+		07C4E667208B33C6005FA983 /* AppInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E666208B33C6005FA983 /* AppInit.m */; };
+		07C4E66A208B34EE005FA983 /* UpdateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E669208B34EE005FA983 /* UpdateTool.m */; };
+		07C4E66D208B3590005FA983 /* UpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E66C208B3590005FA983 /* UpdateView.m */; };
+		07C4E670208B3DD1005FA983 /* AppVersionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E66F208B3DD1005FA983 /* AppVersionModel.m */; };
+		07C4E674208B3FF0005FA983 /* UITabBarItem+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E673208B3FF0005FA983 /* UITabBarItem+Extend.m */; };
+		07C4E677208B4216005FA983 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E676208B4216005FA983 /* BaseTabBarController.m */; };
+		07C4E67C208B483A005FA983 /* UIBarButtonItem+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E67B208B483A005FA983 /* UIBarButtonItem+Extend.m */; };
+		07C4E67F208B487A005FA983 /* BaseTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E67E208B487A005FA983 /* BaseTabBar.m */; };
+		07C4E683208B4DE6005FA983 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4E682208B4DE6005FA983 /* UITabBar+Badge.m */; };
 		07CF0725207EE6E90062BDCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0724207EE6E90062BDCF /* AppDelegate.m */; };
 		07CF0743207EF24B0062BDCF /* ApiNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0742207EF24B0062BDCF /* ApiNetWork.m */; };
 		07CF0746207EF4390062BDCF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF0745207EF4390062BDCF /* BaseViewController.m */; };
@@ -26,6 +37,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07C4E65E208B2E0F005FA983 /* ApiNetWork+AppInit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApiNetWork+AppInit.h"; sourceTree = "<group>"; };
+		07C4E65F208B2E0F005FA983 /* ApiNetWork+AppInit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ApiNetWork+AppInit.m"; sourceTree = "<group>"; };
+		07C4E661208B3196005FA983 /* GuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		07C4E662208B3196005FA983 /* GuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		07C4E665208B33C6005FA983 /* AppInit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInit.h; sourceTree = "<group>"; };
+		07C4E666208B33C6005FA983 /* AppInit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInit.m; sourceTree = "<group>"; };
+		07C4E668208B34EE005FA983 /* UpdateTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateTool.h; sourceTree = "<group>"; };
+		07C4E669208B34EE005FA983 /* UpdateTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateTool.m; sourceTree = "<group>"; };
+		07C4E66B208B3590005FA983 /* UpdateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateView.h; sourceTree = "<group>"; };
+		07C4E66C208B3590005FA983 /* UpdateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateView.m; sourceTree = "<group>"; };
+		07C4E66E208B3DD1005FA983 /* AppVersionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppVersionModel.h; sourceTree = "<group>"; };
+		07C4E66F208B3DD1005FA983 /* AppVersionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppVersionModel.m; sourceTree = "<group>"; };
+		07C4E672208B3FF0005FA983 /* UITabBarItem+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+Extend.h"; sourceTree = "<group>"; };
+		07C4E673208B3FF0005FA983 /* UITabBarItem+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+Extend.m"; sourceTree = "<group>"; };
+		07C4E675208B4216005FA983 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		07C4E676208B4216005FA983 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		07C4E67A208B483A005FA983 /* UIBarButtonItem+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extend.h"; sourceTree = "<group>"; };
+		07C4E67B208B483A005FA983 /* UIBarButtonItem+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extend.m"; sourceTree = "<group>"; };
+		07C4E67D208B487A005FA983 /* BaseTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBar.h; sourceTree = "<group>"; };
+		07C4E67E208B487A005FA983 /* BaseTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBar.m; sourceTree = "<group>"; };
+		07C4E681208B4DE6005FA983 /* UITabBar+Badge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
+		07C4E682208B4DE6005FA983 /* UITabBar+Badge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
 		07CF0720207EE6E90062BDCF /* MBProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CF0723207EE6E90062BDCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		07CF0724207EE6E90062BDCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +105,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07C4E65B208B2DF4005FA983 /* AppInit */ = {
+			isa = PBXGroup;
+			children = (
+				07C4E665208B33C6005FA983 /* AppInit.h */,
+				07C4E666208B33C6005FA983 /* AppInit.m */,
+				07C4E664208B33B2005FA983 /* Update */,
+				07C4E65C208B2DF4005FA983 /* Guide */,
+				07C4E65D208B2DF4005FA983 /* NetWork */,
+			);
+			path = AppInit;
+			sourceTree = "<group>";
+		};
+		07C4E65C208B2DF4005FA983 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				07C4E661208B3196005FA983 /* GuideViewController.h */,
+				07C4E662208B3196005FA983 /* GuideViewController.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		07C4E65D208B2DF4005FA983 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				07C4E65E208B2E0F005FA983 /* ApiNetWork+AppInit.h */,
+				07C4E65F208B2E0F005FA983 /* ApiNetWork+AppInit.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		07C4E664208B33B2005FA983 /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				07C4E668208B34EE005FA983 /* UpdateTool.h */,
+				07C4E669208B34EE005FA983 /* UpdateTool.m */,
+				07C4E66B208B3590005FA983 /* UpdateView.h */,
+				07C4E66C208B3590005FA983 /* UpdateView.m */,
+				07C4E66E208B3DD1005FA983 /* AppVersionModel.h */,
+				07C4E66F208B3DD1005FA983 /* AppVersionModel.m */,
+			);
+			path = Update;
+			sourceTree = "<group>";
+		};
+		07C4E671208B3FC5005FA983 /* UITabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				07C4E672208B3FF0005FA983 /* UITabBarItem+Extend.h */,
+				07C4E673208B3FF0005FA983 /* UITabBarItem+Extend.m */,
+			);
+			path = UITabBarItem;
+			sourceTree = "<group>";
+		};
+		07C4E678208B428C005FA983 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				07C4E67D208B487A005FA983 /* BaseTabBar.h */,
+				07C4E67E208B487A005FA983 /* BaseTabBar.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		07C4E679208B4824005FA983 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				07C4E67A208B483A005FA983 /* UIBarButtonItem+Extend.h */,
+				07C4E67B208B483A005FA983 /* UIBarButtonItem+Extend.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		07C4E680208B4DC9005FA983 /* UITabBar */ = {
+			isa = PBXGroup;
+			children = (
+				07C4E681208B4DE6005FA983 /* UITabBar+Badge.h */,
+				07C4E682208B4DE6005FA983 /* UITabBar+Badge.m */,
+			);
+			path = UITabBar;
+			sourceTree = "<group>";
+		};
 		07CF0717207EE6E90062BDCF = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +226,9 @@
 		07CF073B207EEC2F0062BDCF /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				07C4E680208B4DC9005FA983 /* UITabBar */,
+				07C4E679208B4824005FA983 /* UIBarButtonItem */,
+				07C4E671208B3FC5005FA983 /* UITabBarItem */,
 				07D8D86B20802E020060C8E5 /* UIButton */,
 				07D8D7E2207F5C920060C8E5 /* UIView */,
 				07D8D7DE207F5B070060C8E5 /* NSString */,
@@ -127,6 +242,7 @@
 		07CF073C207EECB40062BDCF /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				07C4E65B208B2DF4005FA983 /* AppInit */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -134,6 +250,7 @@
 		07CF073D207EF22E0062BDCF /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				07C4E678208B428C005FA983 /* BaseView */,
 				07CF073E207EF22E0062BDCF /* BaseNetWork */,
 				07CF073F207EF22E0062BDCF /* BaseViewController */,
 				07CF0740207EF22E0062BDCF /* BaseDefine */,
@@ -157,6 +274,8 @@
 				07CF0745207EF4390062BDCF /* BaseViewController.m */,
 				07CF0747207EF4570062BDCF /* BaseNavigationController.h */,
 				07CF0748207EF4570062BDCF /* BaseNavigationController.m */,
+				07C4E675208B4216005FA983 /* BaseTabBarController.h */,
+				07C4E676208B4216005FA983 /* BaseTabBarController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -366,17 +485,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C4E66A208B34EE005FA983 /* UpdateTool.m in Sources */,
 				07CF075B207EFA420062BDCF /* main.m in Sources */,
 				07D8D7D5207F572C0060C8E5 /* UIImage+drawRect.m in Sources */,
 				07CF0746207EF4390062BDCF /* BaseViewController.m in Sources */,
 				07CF0725207EE6E90062BDCF /* AppDelegate.m in Sources */,
+				07C4E670208B3DD1005FA983 /* AppVersionModel.m in Sources */,
+				07C4E66D208B3590005FA983 /* UpdateView.m in Sources */,
 				07D8D7DD207F58AE0060C8E5 /* NSDate+Extend.m in Sources */,
+				07C4E67C208B483A005FA983 /* UIBarButtonItem+Extend.m in Sources */,
+				07C4E67F208B487A005FA983 /* BaseTabBar.m in Sources */,
 				07D8D7D9207F57710060C8E5 /* UIColor+Extend.m in Sources */,
 				07D8D86E20802E150060C8E5 /* UIButton+Click.m in Sources */,
+				07C4E674208B3FF0005FA983 /* UITabBarItem+Extend.m in Sources */,
 				07D8D7E1207F5B2D0060C8E5 /* NSString+Check.m in Sources */,
 				07CF0743207EF24B0062BDCF /* ApiNetWork.m in Sources */,
+				07C4E683208B4DE6005FA983 /* UITabBar+Badge.m in Sources */,
+				07C4E667208B33C6005FA983 /* AppInit.m in Sources */,
 				07D8D7E5207F5C9F0060C8E5 /* UIView+Frame.m in Sources */,
+				07C4E663208B3196005FA983 /* GuideViewController.m in Sources */,
 				07CF0749207EF4570062BDCF /* BaseNavigationController.m in Sources */,
+				07C4E660208B2E0F005FA983 /* ApiNetWork+AppInit.m in Sources */,
+				07C4E677208B4216005FA983 /* BaseTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +649,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MBProject/Source/MBProject_Header.pch";
 				INFOPLIST_FILE = MBProject/Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,6 +670,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MBProject/Source/MBProject_Header.pch";
 				INFOPLIST_FILE = MBProject/Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

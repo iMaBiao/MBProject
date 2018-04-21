@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppInit.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [UIApplication sharedApplication].statusBarHidden = NO;
+    self.window = [[UIWindow alloc]init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    [[AppInit instance] appInitFuction];
+    
+    
     return YES;
 }
 

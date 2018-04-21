@@ -59,13 +59,17 @@ static const char *UIControl_acceptEventTime = "UIControl_acceptEventTime";
 
 
 // 在load时执行hook
-+ (void)load {
-    Method before   = class_getInstanceMethod(self, @selector(sendAction:to:forEvent:));
-    Method after    = class_getInstanceMethod(self, @selector(mb_sendAction:to:forEvent:));
-    method_exchangeImplementations(before, after);
-}
+//+ (void)load {
+//    Method before   = class_getInstanceMethod(self, @selector(sendAction:to:forEvent:));
+//    Method after    = class_getInstanceMethod(self, @selector(mb_sendAction:to:forEvent:));
+//    method_exchangeImplementations(before, after);
+//}
 
 - (void)mb_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
+    self.acceptEventTime = 1;
+    NSLog(@"%s self.acceptEventTime = %lf",__FUNCTION__,self.acceptEventTime);
+    NSLog(@"%s acceptEventInterval = %lf",__FUNCTION__,self.acceptEventInterval);
+    
     if ([NSDate date].timeIntervalSince1970 - self.acceptEventTime < self.acceptEventInterval) {
         return;
     }

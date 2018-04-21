@@ -29,5 +29,4 @@
 #define TipShowTime   2.0
 
 
-
 #endif /* CommonDefine_h */

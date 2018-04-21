@@ -12,10 +12,10 @@
 //  用户定义基础类型的Api
 
 //生产环境
-//#define BaseUrl    @"http://cmiinv.com/"
+//#define BaseUrl    @""
 
 //测试环境
-//#define BaseUrl @"http://10.110.1.206/gridjob/userfiles/ceshi02/"
+#define BaseUrl @""
 
 
 #endif /* ApiDefine_h */

@@ -6,12 +6,25 @@
 //  Copyright © 2018年 MaBiao. All rights reserved.
 //
 
-#define DEFAULT_VOID_COLOR  [UIColor colorWithRed:49.0/255.0 green:186.0/255.0 blue:138.0/255.0 alpha:1.0]
-
 #import "UIColor+Extend.h"
 
 @implementation UIColor (Extend)
 
++ (UIColor *)mainColor
+{
+    return [self colorWithRGBA:49 g:186 b:138 a:1.0];
+}
++ (UIColor *)randomColor
+{
+    return  [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
+}
++ (UIColor *)colorWithRGBA:(CGFloat )r g:(CGFloat)g b:(CGFloat)b a:(CGFloat)alpha
+{
+    return [UIColor colorWithRed:((float) r / 255.0f)
+                           green:((float) g / 255.0f)
+                            blue:((float) b / 255.0f)
+                           alpha:alpha];
+}
 + (UIColor *)colorWithHexString:(NSString *)color
 {
      return [self colorWithHexString:color alpha:1.0f];
@@ -28,7 +41,7 @@
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
     // String should be 6 or 8 characters
-    if ([cString length] < 6) return DEFAULT_VOID_COLOR;
+    if ([cString length] < 6) return [self mainColor];
     
     // strip 0X if it appears
     if ([cString hasPrefix:@"0X"])
@@ -38,7 +51,8 @@
         cString = [cString substringFromIndex:1];
     
     if ([cString length] != 6)
-        return DEFAULT_VOID_COLOR;
+        return [self mainColor];
+    
     // Separate into r, g, b substrings
     NSRange range;
     range.location = 0;
