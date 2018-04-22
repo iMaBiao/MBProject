@@ -23,7 +23,7 @@
 
 
 //-------比例（以6S为例）------------------------------------------------------
-#define SCALE  ScreenWidth/375.0f
+#define SCALE  ScreenWidth / 375.0f
 
 //提示显示时间  秒
 #define TipShowTime   2.0

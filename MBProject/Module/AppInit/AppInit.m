@@ -33,6 +33,7 @@
 
 - (void)appInitFuction
 {
+    
     [self initRootTabBar];
 }
 
