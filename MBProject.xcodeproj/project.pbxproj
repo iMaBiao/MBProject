@@ -421,7 +421,6 @@
 				07CF071C207EE6E90062BDCF /* Sources */,
 				07CF071D207EE6E90062BDCF /* Frameworks */,
 				07CF071E207EE6E90062BDCF /* Resources */,
-				6DDDFFB1C7FE5FAC6051C1D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -479,24 +478,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6DDDFFB1C7FE5FAC6051C1D9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MBProject/Pods-MBProject-resources.sh",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBProject/Pods-MBProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EED81B90D5E8757C7CF5092C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

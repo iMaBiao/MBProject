@@ -39,7 +39,7 @@ pod 'AFNetworking'
 #pod 'YYText'
 #pod 'YYAsyncLayer'
 #pod 'YYCategories'
-
+pod 'YYCache'
 # h5交互
 #pod 'WebViewJavascriptBridge'
 

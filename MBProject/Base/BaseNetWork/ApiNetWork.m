@@ -6,9 +6,12 @@
 //  Copyright © 2018年 MaBiao. All rights reserved.
 //
 
-#define TimeOutSecs  30.0
+#define TimeOutSecs  20.0
 
 #import "ApiNetWork.h"
+#import <YYCache/YYCache.h>
+
+static NSString * const ApiNetworkCache = @"ApiNetworkCache";
 
 @implementation ApiNetWork
 
@@ -42,41 +45,109 @@
 - (void)httpGetFunc:(NSDictionary *)parameters
                 URL:(NSString *)url
             success:(void (^)(id result))success
-            failure:(void (^)(NSError *error))failure;
+            failure:(void (^)(NSError *error))failure
+        cachePolicy:(ApiNetworkCachePolicy)cachePolicy
 {
-    
+    //设置请求头
     //[_manager.requestSerializer setValue:@"" forHTTPHeaderField:@""];
 
-    [_manager GET:url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if(success)
-        {
-            success(responseObject);
+    YYCache *cache = [[YYCache alloc] initWithName:ApiNetworkCache];
+    id response = [cache objectForKey:url];
+    if ([cache containsObjectForKey:url] && success && cachePolicy == ApiNetworkCachePolicyReturnCacheDataNotLoad) {//有缓存且需要回调且不需要发出请求
+        success(response);
+    }else {//需要发网络请求
+        
+        if (cachePolicy == ApiNetworkCachePolicyCacheDataThenLoad) {///< 有缓存就先返回缓存，同步请求数据
+           success(response);
         }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (failure) {
-            failure(error);
-        }
-    }];
+        
+        [_manager GET:url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+
+            ///< 忽略缓存，重新请求
+            if (cachePolicy == ApiNetworkCachePolicyIgnoreCacheReload || cachePolicy == ApiNetworkCachePolicyCacheDataThenLoad) {
+                if(success){
+                    success(responseObject);
+                }
+            }
+            
+            //缓存数据
+            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject
+                                                                options:NSJSONReadingMutableContainers
+                                                                  error:nil];
+            if (dic.count) {
+                [cache setObject:dic forKey:url];
+            }
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            if (failure) {
+                failure(error);
+            }
+        }];
+        
+    }
+   
 }
 
 - (void)httpPostFunc:(NSDictionary *)parameters
                  URL:(NSString *)url
              success:(void (^)(id result))success
              failure:(void (^)(NSError *error))failure
+         cachePolicy:(ApiNetworkCachePolicy)cachePolicy
 {
-    [_manager POST:url parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if(success)
-        {
-            success(responseObject);
+    
+    //设置请求头
+    //[_manager.requestSerializer setValue:@"" forHTTPHeaderField:@""];
+    
+    YYCache *cache = [[YYCache alloc] initWithName:ApiNetworkCache];
+    id response = [cache objectForKey:url];
+    if ([cache containsObjectForKey:url] && success && cachePolicy == ApiNetworkCachePolicyReturnCacheDataNotLoad) {//有缓存且需要回调且不需要发出请求
+        success(response);
+    }else{
+        
+        if (cachePolicy == ApiNetworkCachePolicyCacheDataThenLoad) {///< 有缓存就先返回缓存，同步请求数据
+            success(response);
         }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (failure) {
-            failure(error);
-        }
-    }];
+        
+        [_manager POST:url parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            ///< 忽略缓存，重新请求
+            if (cachePolicy == ApiNetworkCachePolicyIgnoreCacheReload || cachePolicy == ApiNetworkCachePolicyCacheDataThenLoad) {
+                if(success){
+                    success(responseObject);
+                }
+            }
+            
+            //缓存数据
+            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject
+                                                                    options:NSJSONReadingMutableContainers
+                                                                      error:nil];
+            if (dic.count) {
+                [cache setObject:dic forKey:url];
+            }
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            if (failure) {
+                failure(error);
+            }
+        }];
+        
+    }
 }
 
+
+//NSString *jsonString = [[ NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+//if ([jsonString hasPrefix:@"{"]) {
+//    NSError *err;
+//    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject
+//                                                        options:NSJSONReadingMutableContainers
+//                                                          error:&err];
+//    if (mnnetSet.saveCache && ![dic safeBoolForKey:@"is_last_page"]) {
+//        [cache setObject:dic forKey:url];
+//    }
+//    success(dic);
+//}else{
+//    success(jsonString);
+//}
 
 @end
