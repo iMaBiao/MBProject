@@ -11,6 +11,9 @@ pod 'AFNetworking'
 # 网络监控
 #pod 'Reachability'
 
+# 导航栏
+#pod 'RTRootNavigationController'
+
 # 转模型
 #pod 'MJExtension'
 #pod 'JSONModel'
@@ -21,7 +24,7 @@ pod 'AFNetworking'
 # 图片加载
 #pod 'SDWebImage'
 
-#用于适配
+#自动布局
 #pod 'Masonry'
 
 # 蒙版
@@ -40,6 +43,7 @@ pod 'AFNetworking'
 #pod 'YYAsyncLayer'
 #pod 'YYCategories'
 pod 'YYCache'
+
 # h5交互
 #pod 'WebViewJavascriptBridge'
 

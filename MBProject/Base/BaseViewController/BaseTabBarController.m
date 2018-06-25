@@ -41,13 +41,13 @@
     self.view.backgroundColor = [UIColor randomColor];
     
     
-    [self addChildsViewController:[[UIViewController alloc]init] title:@"语聊" image:@"me" selectedImage:@"me_selected"];
+    [self addChildsViewController:[[UIViewController alloc]init] title:@"一" image:@"me" selectedImage:@"me_selected"];
     
-    [self addChildsViewController:[[UIViewController alloc]init] title:@"订制" image:@"me" selectedImage:@"me_selected"];
+    [self addChildsViewController:[[UIViewController alloc]init] title:@"二" image:@"me" selectedImage:@"me_selected"];
     
-    [self addChildsViewController:[[UIViewController alloc]init] title:@"消息" image:@"me" selectedImage:@"me_selected"];
+    [self addChildsViewController:[[UIViewController alloc]init] title:@"三" image:@"me" selectedImage:@"me_selected"];
     
-    [self addChildsViewController:[[UIViewController alloc]init] title:@"我的" image:@"me" selectedImage:@"me_selected"];
+    [self addChildsViewController:[[UIViewController alloc]init] title:@"四" image:@"me" selectedImage:@"me_selected"];
     
     // 更换系统自带的tabBar
 //    BaseTabBar *tabBar = [[BaseTabBar alloc]init];

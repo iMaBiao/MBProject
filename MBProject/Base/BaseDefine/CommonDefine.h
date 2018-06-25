@@ -21,6 +21,14 @@
 #define BottomTarBarSpace (DeviceHeight == 812.0 ? 34 : 0)
 #define TabBarHeight       49
 
+// 是否是iPhoneX
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+// 判断是否为 4英寸
+#define FourInch [[UIScreen mainScreen] bounds].size.width == 320.0f && [[UIScreen mainScreen] bounds].size.height == 568.0f
+// 判断是否为 4.7英寸
+#define Four_sevenInch [[UIScreen mainScreen] bounds].size.width == 375.0f && [[UIScreen mainScreen] bounds].size.height == 667.0f
+// 判断是否为 5.5英寸
+#define Five_fiveInch [[UIScreen mainScreen] bounds].size.width == 414.0f && [[UIScreen mainScreen] bounds].size.height == 736.0f
 
 //-------比例（以6S为例）------------------------------------------------------
 #define SCALE  ScreenWidth / 375.0f

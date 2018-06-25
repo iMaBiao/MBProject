@@ -23,32 +23,34 @@
 
 
 
-- (void)getAppVersion:(NSDictionary *)parameters URL:(NSString *)url success:(void (^)(id *responseObject))success failure:(void (^)(NSError *error))failure
+- (void)getAppVersion:(NSDictionary *)parameters URL:(NSString *)url success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure
 {
-    [self httpGetFunc:parameters URL:url success:^(id result) {
-        //将获取的数据转成NSDictionary
-//        NSDictionary *resultDictionary = [NSJSONSerialization JSONObjectWithData:result options:kNilOptions error:nil];
-        if(success){
-            
-        }
+    
+    [self GETWithURL:url parameters:parameters cachePolicy:MBCachePolicyNetworkOnly callback:^(id responseObject, NSError *error) {
         
-    } failure:^(NSError *error) {
-        if(failure){
+        if (!error) {
+            if(success){
+                success(responseObject);
+            }
+            
+        }else{
             failure(error);
+            NSLog(@"---->%@",@"错误");
         }
     }];
 }
 
-- (void)getAppActivity:(NSDictionary *)parameters URL:(NSString *)url success:(void (^)(id *responseObject))success failure:(void (^)(NSError *error))failure
+- (void)getAppActivity:(NSDictionary *)parameters URL:(NSString *)url success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure
 {
-    [self httpGetFunc:parameters URL:url success:^(id result) {
-       
-        if(success){
+    [self GETWithURL:url parameters:parameters cachePolicy:MBCachePolicyNetworkOnly callback:^(id responseObject, NSError *error) {
+        if (!error) {
+            if(success){
+                success(responseObject);
+            }
             
-        }
-    } failure:^(NSError *error) {
-        if(failure){
+        }else{
             failure(error);
+            NSLog(@"---->%@",@"错误");
         }
     }];
 }

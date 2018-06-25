@@ -40,7 +40,7 @@
     
     NSString *url = [[ApiNetWork instance] apiAppVersion];
     
-    [[ApiNetWork instance]getAppVersion:paramsDic URL:url success:^(__autoreleasing id *responseObject) {
+    [[ApiNetWork instance]getAppVersion:paramsDic URL:url success:^(__autoreleasing id responseObject) {
         
         NSInteger localVersion = [[currentVersion stringByReplacingOccurrencesOfString:@"." withString:@""] integerValue];
         
@@ -62,33 +62,36 @@
 {
     NSString *url = [NSString stringWithFormat:@"https://itunes.apple.com/lookup?id=1163499508"];
     
-    [[ApiNetWork instance] httpGetFunc:nil URL:url success:^(id result) {
-        NSDictionary *resultDictionary = [NSJSONSerialization JSONObjectWithData:result options:kNilOptions error:nil];
-        NSArray *resultArray = [resultDictionary objectForKey:@"results"];
-       
-        if (![resultArray count]) {
-            NSLog(@"error : resultArray == nil");
-            return;
+    [[ApiNetWork instance]GETWithURL:url parameters:nil cachePolicy:MBCachePolicyIgnoreCache callback:^(id responseObject, NSError *error) {
+        if (!error) {
+            NSDictionary *resultDictionary = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
+            NSArray *resultArray = [resultDictionary objectForKey:@"results"];
+            
+            if (![resultArray count]) {
+                NSLog(@"error : resultArray == nil");
+                return;
+            }
+            
+            NSDictionary *infoDict = [resultArray objectAtIndex:0];
+            //获取服务器上应用的最新版本号
+            NSString *updateVersion = infoDict[@"version"];
+            //获取服务器上应用的最新名字
+            //        NSString *trackName = infoDict[@"trackName"];
+            //获取服务器上应用最新的版本新功能
+            //        NSString *note = [infoDict objectForKey:@"releaseNotes"];
+            //应用下载页
+            self.appStoreUrl = infoDict[@"trackViewUrl"];
+            //获取当前设备中应用的版本号
+            NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+            NSString *currentVersion = [infoDic objectForKey:@"CFBundleShortVersionString"] ;
+            //判断两个版本是否相同
+            if ([updateVersion compare:currentVersion options:NSNumericSearch] == NSOrderedDescending) {
+                [self showUpdateView];
+            }
+            
+        }else{
+            NSLog(@"%s from appStpre Info error = %@",__FUNCTION__,error);
         }
-        
-        NSDictionary *infoDict = [resultArray objectAtIndex:0];
-        //获取服务器上应用的最新版本号
-        NSString *updateVersion = infoDict[@"version"];
-        //获取服务器上应用的最新名字
-//        NSString *trackName = infoDict[@"trackName"];
-        //获取服务器上应用最新的版本新功能
-//        NSString *note = [infoDict objectForKey:@"releaseNotes"];
-        //应用下载页
-        self.appStoreUrl = infoDict[@"trackViewUrl"];
-        //获取当前设备中应用的版本号
-        NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
-        NSString *currentVersion = [infoDic objectForKey:@"CFBundleShortVersionString"] ;
-        //判断两个版本是否相同
-        if ([updateVersion compare:currentVersion options:NSNumericSearch] == NSOrderedDescending) {
-            [self showUpdateView];
-        }
-    } failure:^(NSError *error) {
-        NSLog(@"%s from appStpre Info error = %@",__FUNCTION__,error);
     }];
 }
 

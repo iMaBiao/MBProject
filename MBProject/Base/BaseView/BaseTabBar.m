@@ -11,9 +11,8 @@
 
 @interface BaseTabBar()
 
-/***  发布按钮*/
-@property(nonatomic,weak)UIButton *publishButton;
-//@property(nonatomic,weak)UIView  *line;
+/***  中心按钮 */
+@property(nonatomic,weak)UIButton *centerButton;
 @end
 
 @implementation BaseTabBar
@@ -24,20 +23,12 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        
-//        self.backgroundImage = [UIImage imageWithColor:[UIColor colorWithRGBA:33 g:32 b:36 a:1.0]];
-//        UIView *line = [[UIView alloc]init];
-//        line.backgroundColor = [UIColor mainColor];
-//        [self addSubview:line];
-//        line.alpha = 0.5;
-//        self.line = line;
-
-        UIButton *publishButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [publishButton setBackgroundImage:[UIImage imageNamed:@"compose.jpg"] forState:UIControlStateNormal];
-        [publishButton addTarget:self action:@selector(publishClick) forControlEvents:UIControlEventTouchUpInside];
-        publishButton.adjustsImageWhenHighlighted = NO;
-        [self addSubview:publishButton];
-        self.publishButton = publishButton;
+        UIButton *centerButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [centerButton setBackgroundImage:[UIImage imageNamed:@"compose.jpg"] forState:UIControlStateNormal];
+        [centerButton addTarget:self action:@selector(centerClick) forControlEvents:UIControlEventTouchUpInside];
+        centerButton.adjustsImageWhenHighlighted = NO;
+        [self addSubview:centerButton];
+        self.centerButton = centerButton;
     }
     return self;
 }
@@ -48,16 +39,10 @@
     
     [super layoutSubviews];
     
-//    CGFloat lineX = ScreenWidth / 2 + 0.5;
-//    CGFloat lineW = 1;
-//    CGFloat lineH = 32;
-//    CGFloat lineY = (TabBarHeight + BottomTarBarSpace -lineH)/2;
-//    self.line.frame = CGRectMake(lineX, lineY, lineW, lineH);
-    
-    CGFloat publichButtonW =  self.publishButton.currentBackgroundImage.size.width;
-    CGFloat publichButtonH = self.publishButton.currentBackgroundImage.size.height;
-    self.publishButton.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
-    self.publishButton.bounds = CGRectMake(0, 0, publichButtonW, publichButtonH);
+    CGFloat centerButtonW =  self.centerButton.currentBackgroundImage.size.width;
+    CGFloat centerButtonH = self.centerButton.currentBackgroundImage.size.height;
+    self.centerButton.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+    self.centerButton.bounds = CGRectMake(0, 0, centerButtonW, centerButtonH);
     //设置其他UITabBarButton的frame
     CGFloat buttonY = 0;
     CGFloat buttonW = self.frame.size.width / 3;
@@ -66,7 +51,7 @@
     NSInteger index = 0;
     for (UIView *button in self.subviews) {
         //如果tabBar的子控件不是继承UIControl 或子控件是发布按钮，继续遍历，直到找到继承UIControl的子控件（UITabBarButton）
-        if (![button isKindOfClass:[UIControl class]] || button == self.publishButton) continue;
+        if (![button isKindOfClass:[UIControl class]] || button == self.centerButton) continue;
         
         CGFloat buttonX = buttonW * ((index > 0)?(index+1):index);
         button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
@@ -75,12 +60,9 @@
     }
 }
 
-
 #pragma mark - action
-/**
- *  发布按钮点击
- */
-- (void)publishClick{
+/**  按钮点击 */
+- (void)centerClick{
     NSLog(@"%s ",__FUNCTION__);
 }
 
