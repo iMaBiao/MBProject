@@ -134,4 +134,6 @@ pod 'YYCache'
 #日期选择器
 #pod 'PGDatePicker'
 
+# 在状态栏显示 FPS
+#pod 'JPFPSStatus', '~> 0.1.1'
 end

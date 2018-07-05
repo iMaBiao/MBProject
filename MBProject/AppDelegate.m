@@ -26,7 +26,10 @@
     
     [[AppInit instance] appInitFuction];
     
-    
+    //在状态栏显示FPS
+//#if defined(DEBUG)||defined(_DEBUG)
+//    [[JPFPSStatus sharedInstance] open];
+//#endif
     
     return YES;
 }
