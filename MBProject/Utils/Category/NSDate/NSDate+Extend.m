@@ -169,4 +169,67 @@
     NSString *lastString = [myDateFormatter stringFromDate: lastDate];
     return @[firstString, lastString];
 }
+
+- (NSDateComponents *)componentsOfDay {
+    return [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:self];
+}
+
+/** 获得NSDate对应的小时数 **/
+- (NSUInteger)hour {
+    return [self componentsOfDay].hour;
+}
+
+/** 获得NSDate对应的分钟数 **/
+- (NSUInteger)minute {
+    return [self componentsOfDay].minute;
+}
+
+/** 获得NSDate对应的秒数**/
+- (NSUInteger)second {
+    return [self componentsOfDay].second;
+}
+
+/** 获得NSDate对应的星期 **/
+- (NSUInteger)weekday {
+    return [self componentsOfDay].weekday;
+}
+
+///获取当天是当年的第几周
+- (NSUInteger)weekOfDayInYear {
+    return [[NSCalendar currentCalendar] ordinalityOfUnit:NSCalendarUnitWeekOfYear inUnit:NSCalendarUnitYear forDate:self];
+}
+
+/**  今天星期几来着？ */
+- (NSString *)whatDayTheWeek {
+    NSDateComponents *componets = [[NSCalendar autoupdatingCurrentCalendar] components:NSCalendarUnitWeekday fromDate:self];
+    int weekday = (int) [componets weekday]; //a就是星期几，1代表星期日，2代表星期一，后面依次
+    switch (weekday) {
+        case 1:
+            return @"星期日";
+            break;
+        case 2:
+            return @"星期一";
+            break;
+        case 3:
+            return @"星期二";
+            break;
+        case 4:
+            return @"星期三";
+            break;
+        case 5:
+            return @"星期四";
+            break;
+        case 6:
+            return @"星期五";
+            break;
+        case 7:
+            return @"星期六";
+            break;
+            
+        default:
+            break;
+    }
+    return @"";
+}
+
 @end

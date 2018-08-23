@@ -32,4 +32,23 @@
  @return 数组【第一天，最后一天】
  */
 + (NSArray *)getMonthFirstAndLastDayWith:(NSDate *)date;
+
+
+/** 获得NSDate对应的小时数  */
+- (NSUInteger)hour;
+
+/** 获得NSDate对应的分钟数 */
+- (NSUInteger)minute;
+
+/** 获得NSDate对应的秒数 */
+- (NSUInteger)second;
+
+/** 获得NSDate对应的星期 */
+- (NSUInteger)weekday;
+
+/** 获取当天是当年的第几周 */
+- (NSUInteger)weekOfDayInYear;
+
+/** 今天星期几来着？ */
+- (NSString *)whatDayTheWeek;
 @end

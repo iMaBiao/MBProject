@@ -11,7 +11,7 @@
 @interface UIColor (Extend)
 
 ///主题色
-+ (UIColor *)mainColor;
+//+ (UIColor *)mainColor;
 
 ///随机色
 + (UIColor *)randomColor;
